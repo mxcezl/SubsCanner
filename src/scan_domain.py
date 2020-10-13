@@ -7,9 +7,9 @@ from dnsdumpster.DNSDumpsterAPI import DNSDumpsterAPI
 
 ##
 #
-# Authors : 
+# Authors (GitHub Profiles) : 
 # - @mxcezl
-# - @squ3d
+# - @squ3D
 #
 # Installation :
 # - DNS-Dumpster : https://github.com/PaulSec/API-dnsdumpster.com
@@ -23,7 +23,7 @@ try:
 	opts, args = getopt.getopt(sys.argv[1:],"u:h")
 
 except getopt.GetoptError:
-	sys.exit(filename + "-u <www.exemple.com>")
+	sys.exit(filename + "-u <exemple.com>")
 
 for opt,arg in opts:
 	if opt in('-u', '--url'):
@@ -33,7 +33,7 @@ for opt,arg in opts:
 		print("Idea of this Script is to be run in a company environment")
 		print("goals is to scan for subs and perform a vulnscan throught Nikto\n")
 		print("Exemple of Usage :")
-		print("\tpython " + filename + " -u www.example.com")
+		print("\tpython " + filename + " -u example.com")
 
 
 		sys.exit(0)
