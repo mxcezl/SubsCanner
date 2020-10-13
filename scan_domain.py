@@ -7,11 +7,11 @@ from dnsdumpster.DNSDumpsterAPI import DNSDumpsterAPI
 
 ##
 #
-# Authors : 
+# Authors (GitHub Profiles) : 
 # - @mxcezl
-# - @squ3d
+# - @squ3D
 #
-# Installation :
+# Depedencies :
 # - DNS-Dumpster : https://github.com/PaulSec/API-dnsdumpster.com
 # - Perl         : https://www.perl.org/get.html
 # - Nikto        : https://github.com/sullo/nikto
@@ -33,14 +33,14 @@ for opt,arg in opts:
 		print("Idea of this Script is to be run in a company environment")
 		print("goals is to scan for subs and perform a vulnscan throught Nikto\n")
 		print("Exemple of Usage :")
-		print("\tpython " + filename + " -u www.example.com")
+		print("\tpython " + filename + " -u example.com")
 
 
 		sys.exit(0)
 	else:
 		sys.exit(0)
 
-print("\n[*] Running DNS-Dumpster API (PaulSec)..\n")
+print("\n[*] Running DNS-Dumpster API (By PaulSec)..\n")
 
 results_json = DNSDumpsterAPI().search(domain)
 
@@ -54,7 +54,7 @@ for result in results_json['dns_records']['host']:
 	subs.append(result['domain'])
 	print(result['domain'])
 
-print("\n\n[*] Running WAScan (m4ll0k)..\n")
+print("\n\n[*] Running WAScan (By m4ll0k)..\n")
 
 if not os.path.exists(dir_out):
     os.makedirs(dir_out)
