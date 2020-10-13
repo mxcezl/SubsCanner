@@ -1,0 +1,1 @@
+Example of output textfile from Nikto.
